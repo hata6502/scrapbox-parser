@@ -1,6 +1,6 @@
 {
   "name": "@progfay/scrapbox-parser",
-  "version": "7.1.2",
+  "version": "7.1.3",
   "description": "parse Scrapbox notation to JavaScript Object",
   "files": [
     "lib",
@@ -22,7 +22,6 @@
     "build:cjs": "tsc -p ./tsconfig.cjs.json",
     "build:esm": "tsc -p ./tsconfig.esm.json",
     "build:umd": "webpack",
-    "prepare": "npm run clean && npm run build",
     "clean": "node -e '[`lib`, `esm`, `umd`, `.cjs.tsbuildinfo`, `.esm.tsbuildinfo`].forEach(path => { fs.rmSync(path, {recursive:true, force:true}) })'",
     "test": "jest --coverage",
     "test:update": "jest --updateSnapshot --no-cache",
@@ -49,7 +48,7 @@
     "url": "https://github.com/progfay/scrapbox-parser/issues"
   },
   "homepage": "https://github.com/progfay/scrapbox-parser#readme",
-  "dependencies": {
+  "devDependencies": {
     "@babel/core": "7.16.0",
     "@babel/preset-env": "7.16.0",
     "@types/core-js": "2.5.5",
