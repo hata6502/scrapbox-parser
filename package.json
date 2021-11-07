@@ -1,6 +1,6 @@
 {
   "name": "@progfay/scrapbox-parser",
-  "version": "7.1.1",
+  "version": "7.1.2",
   "description": "parse Scrapbox notation to JavaScript Object",
   "files": [
     "lib",
@@ -49,7 +49,7 @@
     "url": "https://github.com/progfay/scrapbox-parser/issues"
   },
   "homepage": "https://github.com/progfay/scrapbox-parser#readme",
-  "devDependencies": {
+  "dependencies": {
     "@babel/core": "7.16.0",
     "@babel/preset-env": "7.16.0",
     "@types/core-js": "2.5.5",
